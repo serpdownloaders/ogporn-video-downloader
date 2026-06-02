@@ -1,0 +1,216 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/ogporn-downloader",
+  "serply_link": "https://serp.ly/ogporn-downloader",
+  "app_name": "Ogporn Video Downloader",
+  "short_description": "Download & Save Ogporn Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Ogporn Downloader is a browser extension designed to help you save videos from OGPorn's editorial-style post pages. Unlike generic downloaders, this tool is built specifically for the unique page structure of OGPorn, where video playback happens through embedded iframes rather than direct player elements. The extension detects the iframe handoff, resolves the underlying stream, and delivers clean MP4 files you can watch offline.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/ogporn-downloader-fullscreen-01-8b56bb3e58.webp",
+    "https://apps.serp.co/media/optimized-products/ogporn-downloader-fullscreen-02-b50381eb89.webp",
+    "https://apps.serp.co/media/optimized-products/ogporn-downloader-fullscreen-03-8a2e4af803.webp",
+    "https://apps.serp.co/media/optimized-products/ogporn-downloader-fullscreen-04-5595d8e32d.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "Does this work on every OGPorn page?",
+      "answer": "The extension is designed for editorial-style post pages with dated monthly slugs and iframe-based playback. Other page formats may not be supported."
+    },
+    {
+      "question": "Why does the extension need to detect iframes?",
+      "answer": "OGPorn embeds its video player inside an iframe rather than placing it directly on the page. The extension must see through this handoff to find the actual stream."
+    },
+    {
+      "question": "Is my activity tracked when I use this extension?",
+      "answer": "No. The extension processes everything locally in your browser and does not send any data to external servers."
+    },
+    {
+      "question": "Can I download videos in 4K quality?",
+      "answer": "Available quality options depend on what the original stream provides. The extension will show whatever resolution variants it detects behind the iframe."
+    },
+    {
+      "question": "What happens when my 3 free downloads run out?",
+      "answer": "You can purchase a paid license through the product page for unlimited downloads. Your trial downloads are permanent and will not be revoked."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Anyone building a personal archive of content they have permission to save"
+    },
+    {
+      "name": "",
+      "description": "Keeping a backup copy of content you have explicit permission to save"
+    },
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Purpose-built for OGPorn's branded editorial post pages with dated monthly slugs",
+    "Handles iframe-based video handoff that obscures the actual stream location",
+    "Detects likely m3u8 and mp4 media targets behind embedded frames",
+    "Provides a verified target row with honest disclosure about current maturity",
+    "OGPorn-specific detection tuned for branded editorial post page structure",
+    "Handles dated monthly slugs like may-2024-flavor-of-the-month examples",
+    "Recognizes iframe handoff as the primary playback signal on the page",
+    "Resolves likely m3u8 and mp4 media targets behind embedded frames",
+    "Clean MP4 output format for standard media player compatibility",
+    "Private processing with no data sent to external servers",
+    "Lightweight extension that works in the background",
+    "Regular updates to maintain compatibility with OGPorn page changes"
+  ],
+  "content": {
+    "why": [
+      "OGPorn presents a unique challenge for anyone trying to save videos. The site uses editorial-style post pages with dated monthly slugs that look like articles rather than straightforward video players. The actual media playback happens through an embedded iframe, which hides the stream location from casual inspection. Most generic downloaders fail to detect anything because they look for direct video elements that simply aren't there on the page.",
+      "Ogporn Downloader was built to solve exactly this problem. It recognizes the OGPorn page structure, identifies the iframe handoff as the primary playback signal, and traces the stream path to discover m3u8 or mp4 media underneath. The extension does the detective work so you don't have to inspect page source or dig through network requests. Open a post, let the extension find the stream, and download the video in a clean MP4 format."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open OGPorn and go to a supported video post page.",
+      "Start playback so the extension can detect the iframe handoff.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Navigate to an OGPorn post page with a video you want to save. Look for pages with editorial-style slugs that include month and year labels.",
+      "Allow the page to fully load. The iframe-based player may take a moment to initialize and begin streaming.",
+      "Start playing the video in the embedded player. This triggers the stream handoff that the extension needs to detect.",
+      "Click the Ogporn Downloader icon in your browser toolbar to open the popup interface.",
+      "Wait for the extension to analyze the page and detect the iframe handoff. This may take a few seconds.",
+      "Review the detected stream information. The extension will show available quality options based on what it finds behind the iframe.",
+      "Select your preferred quality and click the download button.",
+      "Save the resulting MP4 file to your preferred location when prompted."
+    ],
+    "supported_formats": [
+      "Input: iframe-embedded video streams from OGPorn post pages, with likely m3u8 and mp4 media targets",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "OGPorn users who want to save videos for offline viewing",
+      "People frustrated by generic downloaders that fail on OGPorn's iframe-based pages",
+      "Users who prefer downloading over streaming for data or connection reasons",
+      "Anyone building a personal archive of content they have permission to save"
+    ],
+    "use_cases": [
+      "Saving videos from OGPorn editorial posts to watch without an internet connection",
+      "Archiving favorite content before it is removed or the page changes",
+      "Building a local library of videos organized by month or series",
+      "Avoiding repeated streaming to reduce data usage on mobile connections",
+      "Keeping a backup copy of content you have explicit permission to save"
+    ],
+    "troubleshooting": [
+      "The extension does not detect any video on the OGPorn page Make sure the video is playing in the embedded iframe before opening the extension popup. The stream handoff only becomes detectable during active playback.",
+      "The download starts but fails partway through This can happen with unstable connections or if the stream source changes during capture. Try restarting the video and initiating the download again.",
+      "I see a message about stale configuration The extension is still being refined for full compatibility with OGPorn page changes. Try clearing your browser cache and reloading the page before attempting again.",
+      "The extension icon is grayed out on OGPorn pages The extension may not be active on that specific page format. Ensure you are on a standard OGPorn post page with an embedded video iframe.",
+      "Downloaded file does not play properly The file may have been corrupted during transfer. Delete the file, reload the OGPorn page, and try the download process again with a fresh capture."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported OGPorn page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "OGPorn editorial post pages use iframe handoff for video playback rather than direct player elements",
+      "The extension is target-verified but may still have configuration updates in progress"
+    ],
+    "about": [
+      "OGPorn is a video platform that presents its content through editorial-style post pages with dated monthly slugs. The site uses iframe-based video handoff for playback, which makes direct downloads difficult without specialized tools like this extension."
+    ]
+  },
+  "serpx_link": "https://serpx.link/ogporn-downloader",
+  "github_topics": [
+    "ogporn-download",
+    "ogporn-downloader",
+    "ogporn-video-downloader",
+    "ogporn-video-downloader-online",
+    "ogporn-video-downloader-mac",
+    "ogporn-video-downloader-window",
+    "ogporn-video-downloader-free",
+    "ogporn-video-downloader-extension",
+    "ogporn-video-downloader-app",
+    "ogporn-video-downloader-chrome",
+    "ogporn-video-downloader-from-url",
+    "how-to-download-ogporn-videos",
+    "how-to-download-ogporn-videos-mac",
+    "how-to-download-ogporn-videos-windows",
+    "how-to-download-ogporn-videos-online",
+    "how-to-download-ogporn-videos-free",
+    "how-to-download-from-ogporn",
+    "how-to-download-videos-from-ogporn",
+    "download-ogporn-videos",
+    "ogporn-video-tutorial",
+    "save-ogporn-videos",
+    "ogporn-video-content-saver",
+    "how-to-download-ogporn-videos-for-free"
+  ],
+  "hashtags": [
+    "#OgpornDownload",
+    "#OgpornDownloader",
+    "#OgpornVideoDownloader",
+    "#OgpornVideoDownloaderOnline",
+    "#OgpornVideoDownloaderMac",
+    "#OgpornVideoDownloaderWindow",
+    "#OgpornVideoDownloaderFree",
+    "#OgpornVideoDownloaderExtension",
+    "#OgpornVideoDownloaderApp",
+    "#OgpornVideoDownloaderChrome",
+    "#OgpornVideoDownloaderFromURL",
+    "#HowToDownloadOgpornVideos",
+    "#HowToDownloadOgpornVideosMac",
+    "#HowToDownloadOgpornVideosWindows",
+    "#HowToDownloadOgpornVideosOnline",
+    "#HowToDownloadOgpornVideosFree",
+    "#HowToDownloadFromOgporn",
+    "#HowToDownloadVideosFromOgporn",
+    "#DownloadOgpornVideos",
+    "#OgpornVideoTutorial",
+    "#SaveOgpornVideos",
+    "#OgpornVideoContentSaver",
+    "#HowToDownloadOgpornVideosForFree"
+  ],
+  "youtube_tags": [
+    "Ogporn Download",
+    "Ogporn Downloader",
+    "Ogporn Video Downloader",
+    "Ogporn Video Downloader Online",
+    "Ogporn Video Downloader Mac",
+    "Ogporn Video Downloader Window",
+    "Ogporn Video Downloader Free",
+    "Ogporn Video Downloader Extension",
+    "Ogporn Video Downloader App",
+    "Ogporn Video Downloader Chrome",
+    "Ogporn Video Downloader From URL",
+    "How To Download Ogporn Videos",
+    "How To Download Ogporn Videos Mac",
+    "How To Download Ogporn Videos Windows",
+    "How To Download Ogporn Videos Online",
+    "How To Download Ogporn Videos Free",
+    "How To Download From Ogporn",
+    "How To Download Videos From Ogporn",
+    "Download Ogporn Videos",
+    "Ogporn Video Tutorial",
+    "Save Ogporn Videos",
+    "Ogporn Video Content Saver",
+    "How To Download Ogporn Videos For Free"
+  ]
+}
